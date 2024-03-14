@@ -29,6 +29,7 @@ class AttentionalFactorizationMachine(nn.Module):
         num_fields = len(field_dims)
 
         self.w0 = nn.Parameter(torch.zeros((1,)))
+        #test
 
         self.embed1 = FeaturesEmbedding(field_dims, 1)
         self.embed2 = FeaturesEmbedding(field_dims, embed_dim)
